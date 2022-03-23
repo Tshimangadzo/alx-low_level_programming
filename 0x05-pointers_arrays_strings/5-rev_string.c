@@ -8,13 +8,14 @@
  *
  */
 
-int count (char *s){
+int count(char *s)
+{
 	int i;
 	int count = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 		count++;
-	return count;
+	return (count);
 }
 
 void rev_string(char *s)
@@ -23,10 +24,11 @@ void rev_string(char *s)
 	int j = 0;
 	int length = (count(s));
 
-	for (i = length - 1; i >= length/2; i--)
+	for (i = length - 1; i >= length / 2; i--)
 	{
 		char first = s[j];
-		s[j]= s[i];
+
+		s[j] = s[i];
 		s[i] = first;
 		j++;
 	}
