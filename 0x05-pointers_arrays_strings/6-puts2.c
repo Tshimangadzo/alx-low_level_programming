@@ -3,7 +3,6 @@
 /**
  * puts2 - prints some numbers
  * @str: string
- * 
  */
 
 void puts2(char *str)
@@ -22,9 +21,12 @@ void puts2(char *str)
 		if (i < count)
 		{
 			_putchar(str[i]);
-		}else{
+		}
+		else
+		{
 			break;
 		}
+		
 		 i = i + 2;
 	}
 	_putchar('\n');
