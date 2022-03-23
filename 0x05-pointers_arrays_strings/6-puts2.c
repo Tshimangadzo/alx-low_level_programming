@@ -13,7 +13,7 @@ void puts2(char *str)
 
 	for (j = 0; str[j] != '\0'; j++)
 	{
-		 count++;
+		count++;
 	}
 	for (i = 0; str[i] != '\0' && i < count;)
 	{
@@ -21,13 +21,7 @@ void puts2(char *str)
 		{
 			_putchar(str[i]);
 		}
-		else
-		{
-			break;
-		}	
-		 i = i + 2;
+		i = i + 2;
 	}
 	_putchar('\n');
 }
-
-
