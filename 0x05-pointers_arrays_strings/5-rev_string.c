@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * count - count numbers of chars
- * @s: char argument
- * Return number of letters
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
  */
 
 int count(char *s)
@@ -16,9 +15,10 @@ int count(char *s)
 		count++;
 	return (count);
 }
+
 /**
- *rev_string - prints
- *@s: char argument
+ * rev_string - reverses a string
+ * @s: string to reverse
  */
 
 
