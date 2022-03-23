@@ -15,7 +15,6 @@ void puts2(char *str)
 	{
 		 count++;
 	}
-
 	for (i = 0; str[i] != '\0' && i < count;)
 	{
 		if (i < count)
@@ -25,8 +24,7 @@ void puts2(char *str)
 		else
 		{
 			break;
-		}
-		
+		}	
 		 i = i + 2;
 	}
 	_putchar('\n');
