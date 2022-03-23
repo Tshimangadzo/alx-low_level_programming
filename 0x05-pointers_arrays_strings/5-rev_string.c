@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_rev - prints
- *@s: char argument
- *
- *
+ * count - count numbers of chars
+ * @s: char argument
+ * Return number of letters
  */
 
 int count(char *s)
@@ -17,6 +16,11 @@ int count(char *s)
 		count++;
 	return (count);
 }
+/**
+ *rev_string - prints
+ *@s: char argument
+ */
+
 
 void rev_string(char *s)
 {
