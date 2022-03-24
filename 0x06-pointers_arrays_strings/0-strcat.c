@@ -1,14 +1,30 @@
-#include <stdio.h>
 #include "main.h"
-#include <string.h>
-/**
- * _strcat - prints n elements of an array of integers
- * @dest: char element
- * @src: char element
- */
+#include <stdio.h>
 
+/**
+ * _strcat - concat 2 string
+ * @dest:char
+ * @src:char
+ * Return:char
+ */
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest,src);
-	return (dest);
+	char *temp = dest;
+	int i, j;
+
+	for (i = 0; *dest != '\0';)
+	{
+		dest++;
+		i++;
+	}
+
+	for (j = 0; *src != '\0'; )
+	{
+		*dest = *src;
+		src++;
+		dest++;
+		j++;
+	}
+	*dest = '\0';
+	return (temp);
 }
