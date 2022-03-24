@@ -5,16 +5,15 @@
 int main(void)
 {
 	int randomNumber;
-	int count = 0;
-	int summation = 27772;
+	int count;
+	int summation;
 
 	srand(time(NULL));
-	while(summation > 122)
+	for (count = 0, summation = 2772; summation > 122; count++)
 	{
 		randomNumber = (rand() % 125) + 1;
 		printf("%c", randomNumber);
 		summation -= randomNumber;
-        count++;
 	}
 	printf("%c", summation);
 
