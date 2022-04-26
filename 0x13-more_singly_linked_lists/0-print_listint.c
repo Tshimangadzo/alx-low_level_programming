@@ -1,23 +1,20 @@
 #include "lists.h"
 
-
 /**
  * print_listint -print elements of the list.
  * @h: pointer to a structure typedef list_t
  * Return: the number of nodes
  **/
 
-
 size_t print_listint(const listint_t *h)
 {
-	size_t count = 0;
+	const listint_t *cont = h;
+	size_t numNodes;
 
-	while (h != NULL)
+	for (numNodes = 0; cont != NULL; numNodes++)
 	{
-		 printf(" %d \n", h->n);
-		h = h->next;
-		count = count + 1;
+		printf("%d\n", cont->n);
+		cont = cont->next;
 	}
-
-	return count;
+	return (numNodes);
 }
