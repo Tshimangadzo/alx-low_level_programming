@@ -2,7 +2,7 @@
 
 
 /**
- * print_listint -print elements of the list.
+ * listint_len - return number of nodes.
  * @h: pointer to a structure typedef list_t
  * Return: the number of nodes
  **/
